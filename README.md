@@ -43,23 +43,10 @@ Alternatively, if you want to install in editable mode, run
 
 When the image is ready, you can run
 
-`docker run -it continualworld bash`
+`docker run --gpus all -it continualworld`
 
 to get inside the image.
 
-## Singularity image
-
-- To build the image with `continualworld` package installed inside, run
-  `singularity build continualworld.sif assets/singularity.def`
-
-- To build the image WITHOUT the `continualworld` package but with all the dependencies installed, run
-  `singularity build continualworld.sif assets/singularity_only_deps.def`
-
-When the image is ready, you can run
-
-`singularity shell continualworld.sif`
-
-to get inside the image.
 
 # Running
 
